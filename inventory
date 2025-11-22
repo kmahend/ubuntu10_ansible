@@ -1,0 +1,6 @@
+centos90 ansible_host=192.168.1.11 ansible_user=mahe 
+centos91 ansible_host=192.168.1.12 ansible_user=mahe 
+rhel10 ansible_host=192.168.1.6 ansible_user=rhel10
+#rhel10 ansible_host=192.168.1.6 ansible_user=rhel10
+
+

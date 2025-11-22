@@ -1,0 +1,13 @@
+---
+   - name: install httpd
+     hosts: all
+     become: true
+
+     tasks:
+     - name: install httpd
+       yum:
+         update_cache: yes
+         sslverify: false 
+           
+          
+        
