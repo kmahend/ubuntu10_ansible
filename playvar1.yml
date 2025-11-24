@@ -1,0 +1,15 @@
+---
+
+ - name: Echo name
+   hosts: all
+   gather_facts: No  
+   vars: 
+    msg_name: Mahe
+   
+   tasks:
+   - name: Print
+     command: echo "{{msg_name}}"
+     register: output
+        var: output  
+
+

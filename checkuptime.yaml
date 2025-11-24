@@ -1,0 +1,14 @@
+---
+- name: Check uptime on remote hosts
+  hosts: all
+  gather_facts: no
+
+  tasks:
+    - name: Run uptime command
+      command: uptime
+      register: uptime_resul
+
+    - name: Show uptime output
+      debug:
+        msg: "{{ uptime_resul.stdout }}"
+
